@@ -1,14 +1,5 @@
 let body = document.getElementById('body');
 
-let headerSep = document.getElementById('headerSeparation');
-let title = document.getElementById('titleH1');
-let title2 = document.getElementById('twoPoints');
-let title3 = document.getElementById('titleEnd');
-
-let linkedin = document.getElementById('linkedin');
-let github =  document.getElementById('github');
-let mail = document.getElementById('mail');
-
 //Variable lié au menu
 let headerSepWidth = 0;
 let titlePosition = -125, title3Position = -175, linkPosition = 40; 
@@ -171,11 +162,11 @@ function selectionNav(event){
                     finalLogo = document.getElementById('lo2'); initialLogoLi = li2;
                 }
                 else if ((liSelect[0].id||liSelect[1].id) == li3.id ) {
-                    finalMenuPosition = 100; finalColor = colors.thirdColor; 
+                    finalMenuPosition = 102; finalColor = colors.thirdColor; 
                     finalLogo = document.getElementById('lo3'); initialLogoLi = li3;
                 }
                 else if ((liSelect[0].id||liSelect[1].id) == li4.id ) {
-                    finalMenuPosition = 150; finalColor = colors.fourthColor; 
+                    finalMenuPosition = 153; finalColor = colors.fourthColor; 
                     finalLogo = document.getElementById('lo4'); initialLogoLi = li4;
                 }
     
@@ -192,99 +183,3 @@ function selectionNav(event){
     }
 }
 
-//fonction lié aux animation d'ouverture de page
-//animation titre et lien a l'ouverture page
-function openning(){
-    if (headerSepWidth <= 95){
-        if(headerSepWidth <= 45){
-            headerSepWidth += 5;
-        }
-        else if (headerSepWidth <= 70){
-            headerSepWidth += 2.5;
-        }
-        else if (headerSepWidth <= 90){
-            headerSepWidth += 1.25;
-        }
-        else { headerSepWidth += 0.625;}
-        headerSep.style.width = headerSepWidth + '%';
-    }
-    else {
-        if (titlePosition <5){
-            if (titleOpacity <= 1){
-                titleOpacity += 0.028573;
-                title.style.opacity = titleOpacity;
-            }
-            if (titlePosition <= -30){
-                titlePosition += 5;
-            }
-            else if (titlePosition <= -5){
-                titlePosition += 2.5;
-            }
-            else{ titlePosition += 1.25; }
-            title.style.marginLeft = titlePosition + 'px';
-        }
-
-        else{
-            if(title2Opacity <= 1){
-                title2Opacity +=0.05;
-                title2.style.opacity = title2Opacity;
-            }
-
-            if (title2Opacity >= 1){
-                if (title3Position <= -40){
-                    title3Opacity += 0.0125;
-                    title3Position+= 5;
-                    title3.style.opacity = title3Opacity;
-                    title3.style.marginLeft = title3Position + 'px';
-                }
-                else if (title3Position <= -10){
-                    title3Opacity += 0.03;
-                    title3Position+= 2.5;
-                    title3.style.opacity = title3Opacity;
-                    title3.style.marginLeft = title3Position + 'px';
-                }
-                else if (title3Position < 0){
-                    title3Opacity += 0.0457;
-                    title3Position+= 1.25;
-                    title3.style.opacity = title3Opacity;
-                    title3.style.marginLeft = title3Position + 'px'; 
-                }
-                else {
-                    if (linkCount == 0){ positionLink(linkedin); }
-                    else if (linkCount == 1){ positionLink(github); }
-                    else if (linkCount == 2){ positionLink(mail); }
-                    }
-
-                    /*clearInterval(open);*/
-
-            }
-        }
-    }
-}
-//animation des liens a l'ouverture page
-function positionLink(linkName){
-    if (linkPosition >= 15){
-        linkPosition -= 5;
-        linkOpacity += 0.091;
-    }
-    else if (linkPosition >= 0){
-        linkPosition -= 2.5;
-        linkOpacity += 0.091;
-    } 
-    else if (linkPosition > -5) {
-        linkPosition -= 1.25;
-        if (linkOpacity < 0.98){
-            linkOpacity += 0.091;   
-        }  
-    }
-    linkName.style.marginTop = linkPosition + 'px';
-    linkName.style.opacity = linkOpacity;
-    if(linkPosition == -5){
-        linkCount ++; linkOpacity = 0, linkPosition = 40;
-    }
-}
-
-open = setInterval(openning, 11);
-
-var loc = window.location.href;
-console.log(loc);

@@ -1,145 +1,108 @@
-html { margin: -10px; overflow-x: hidden; }
-
+html { 
+    margin: -10px; 
+    overflow-x: hidden; 
+}
 #body{
     background: rgb(50, 53, 102);
-    font-family: 'Roboto', sans-serif; font-weight: 100;
+    font-family: 'Roboto', sans-serif; 
+    font-weight: 100;
     color : white;
-    display: flex; flex-direction: column;
+    display: flex; 
+    flex-direction: column;
 
 }
 
-header { display: flex; height: 50px; }
-
-h1 {
-    opacity: 0;
-    white-space:nowrap; font-size: 20px; font-weight: 100; letter-spacing: 1px;
-    margin-top: 4px; margin-left: -125px; 
-    padding-left: 5px; padding-top: 10px;
+#bodyGroup { 
+    display: flex; 
 }
-h1 :nth-child(1){ font-weight: 400; }
-h1 :nth-child(2){ opacity: 0; }
-h1 :nth-child(3){ opacity: 0; margin-left : -175px;}
-
-#link {
-    display: flex; justify-content: flex-end;
-    width: 100%;
-    margin-right: 5px;
+#nav-container{
+    position: relative;
 }
-
-#link li {
-    opacity: 0;
-    margin-top: 40px; margin-left: 13px;
-    list-style-type: none;
-}
-
-#link img { width: 30px; height: 30px; }
-
-#headerSeparation {
-    width: 0%;
-    align-self: center;
-    border-top: white solid 2px;
-}
-
-#bodyGroup { display: flex; }
-
 #nav {
     list-style-type: none;
+    font-size: 23px;
     padding-left: 0px;
     margin-left: 15px;
     background: rgba(255, 255, 255, 0.322);
     border-radius: 20px 0px 20px 20px;
 }
-
 #nav li {
-    height: 50px; width: 119px;
+    height: 50px; 
+    width: 160px;
     cursor : pointer;
-}
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
+}
 #nav li :hover {
     color : rgba(255, 255, 255, 0.719)
 }
-
-#nav :nth-child(3), #nav :nth-child(5), #nav :nth-child(7) {
-    height: 33px;
-}
-
-#nav :nth-child(1) p {
-    padding-top: 12px;
-}
-
 #nav li p {
-    margin-left: 12px;
+    margin: 0px;
 }
-
 .liSeparator {
     width: 85%;
     margin-left: 10px;
     border-top : solid white 1px;
 }
-
-section {
-    width: 100%; height: 870px;
-}
-
-
 #navAnim {
-    height: 200px; width: 26.4px;
+    height: 200px; width: 32px;
     position: absolute;
-    top : 66px; left: 132px;
+    top : 23px; left: 175px;
 }
-
 #navAnimMove {
     width: 100%; height: 50px;
     background: rgba(255, 255, 255, 0.322);
     border-radius: 0px 20px 20px 0px;
 }
-
 #beforeNavAnimMove {
     width: 99%;
     background: rgba(255, 255, 255, 0.322);
 }
-
 #underBNav {
     width: 100%; height: 100%;
     border-radius: 0px 0px 0px 0px;
-    background: rgb(50, 53, 102);
-    
+    background: rgb(50, 53, 102);   
 }
-
 #afterNavAnimMove {
     width: 99%; height: 10px;
     background: rgba(255, 255, 255, 0.322);
 }
-
 #underANav {
     width: 100%; height: 100%; left: 110px; 
     border-radius: 10px 0px 0px 0px;
     background: rgb(50, 53, 102);
 }
-
 .logo {
-    position: absolute; left: 125px;
-    width : 25px; height: 25px;
+    position: absolute; left: 170px;
+    width : 32px; height: 32px;
 }
-
 #lo1 { 
-    top : 78px; 
-    background: url(img/whoiam.png); background-size: 100%; 
-    background-repeat: no-repeat; background-position: center;
+    top : 30px; 
+    background: url(img/whoiam.png); 
+    background-size: 100%; 
+    background-repeat: no-repeat; 
+    background-position: center;
 }
 #lo2 { 
-    top : 128px;
-    background: url(img/skill.png); background-size: 0%; 
-    background-repeat: no-repeat; background-position: center;
+    top : 82px;
+    background: url(img/skill.png); 
+    background-size: 0%; 
+    background-repeat: no-repeat; 
+    background-position: center;
 }
 #lo3 { 
-    top : 178px;
-    background: url(img/school.png); background-size: 0%; 
-    background-repeat: no-repeat; background-position: center;
+    top : 135px;
+    background: url(img/school.png); 
+    background-size: 0%; 
+    background-repeat: no-repeat; 
+    background-position: center;
 }
 #lo4 { 
-    top : 228px; 
-    background: url(img/prod.png); background-size: 0%; 
-    background-repeat: no-repeat; background-position: center;
+    top : 186px; 
+    background: url(img/prod.png); 
+    background-size: 0%; 
+    background-repeat: no-repeat; 
+    background-position: center;
 }
-
