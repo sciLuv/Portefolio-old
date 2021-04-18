@@ -10,6 +10,9 @@ let nav = document.getElementById('nav');
 let navMenuAnim = document.getElementById('navAnim'), navAnim = document.getElementById('navAnimMove');
 let BNavAnim = document.getElementById('beforeNavAnimMove'), ANavAnim = document.getElementById('afterNavAnimMove');
 let underBNav = document.getElementById('underBNav'), underANav = document.getElementById('underANav');
+let navContainer = document.getElementById('nav-container');
+let moreBorderOne = document.getElementById('main-border');
+let moreBorderTwo = document.getElementById('main-border-two');
 let li1 = document.getElementById('li1'), li2 = document.getElementById('li2');
 let li3 = document.getElementById('li3'), li4 = document.getElementById('li4');
 let menuPosition = 0;
@@ -59,6 +62,9 @@ function colorChange () {
             body.style.background = "rgb(" + actualColor.R + ", " + actualColor.G + ", " + actualColor.B + ")";
             underBNav.style.background = "rgb(" + actualColor.R + ", " + actualColor.G + ", " + actualColor.B + ")";
             underANav.style.background = "rgb(" + actualColor.R + ", " + actualColor.G + ", " + actualColor.B + ")";
+            navContainer.style.background = "rgb(" + actualColor.R + ", " + actualColor.G + ", " + actualColor.B + ")";
+            moreBorderOne.style.background = "rgb(" + actualColor.R + ", " + actualColor.G + ", " + actualColor.B + ")";
+            moreBorderTwo.style.background = "rgb(" + actualColor.R + ", " + actualColor.G + ", " + actualColor.B + ")";
         }
     }
 }
