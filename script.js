@@ -19,12 +19,12 @@ let bordRadStart = 0, bordRadBottom = 20, bordRadBefore = 0, bordRadAfter = 10;
 let move;
 
 let colors = {
-    firstColor : { R: 50, G: 53, B: 102 },
-    secondColor : { R: 53, G: 108, B: 58 },
-    thirdColor : { R: 116, G: 45, B: 45 },
-    fourthColor : { R: 126, G: 97, B: 63 }
+    firstColor : { R: 40, G: 61, B: 59 },
+    secondColor : { R: 21, G: 96, B: 102 },
+    thirdColor : { R: 176, G: 62, B: 48 }, 
+    fourthColor : { R: 110, G: 46, B: 37}
 }
-let actualColor = { R: 50, G: 53, B: 102 };
+let actualColor = { R: 40, G: 61, B: 59 };
 let finalColor = { R: undefined, G: undefined, B: undefined };
 let colorRTrans, colorGTrans, colorBTrans;
 
