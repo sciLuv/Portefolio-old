@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animation.css">
+    <link rel="stylesheet" href="responsive.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">   
@@ -34,51 +36,58 @@
         </header>
     </div>
 
-<main>
+    <main>
 
-        <div id="nav-container">
-            <div id="bodyGroup">
-                <nav>
-                    <ul id="nav">
-                        <li id="li1"> <p>Qui suis-je ?</p> </li>
-                            <div class="liSeparator"></div>
-                        <li id="li2"> <p>Compétences</p> </li>
-                            <div class="liSeparator"></div>
-                        <li id="li3"> <p>Formations</p> </li>
-                            <div class="liSeparator"></div>
-                        <li id="li4"> <p>Réalisations</p> </li>
-                    </ul>
-                </nav>
+            <div id="nav-container">
+                <div id="bodyGroup">
+                    <nav>
+                        <ul id="nav">
+                            <li id="li1"> <p>Qui suis-je ?</p> </li>
+                                <div class="liSeparator"></div>
+                            <li id="li2"> <p>Compétences</p> </li>
+                                <div class="liSeparator"></div>
+                            <li id="li3"> <p>Formations</p> </li>
+                                <div class="liSeparator"></div>
+                            <li id="li4"> <p>Réalisations</p> </li>
+                        </ul>
+                    </nav>
+                </div>
+                
+                <div id="navAnim">
+                    <div id="beforeNavAnimMove"> 
+                        <div id="underBNav"></div> 
+                    </div>
+                    <div id="navAnimMove"></div>
+                    <div id="afterNavAnimMove">
+                        <div id="underANav"></div>
+                    </div>
+                </div>
+        
+                <div class="logo" id="lo1"></div>
+                <div class="logo" id="lo2"></div>
+                <div class="logo" id="lo3"></div>
+                <div class="logo" id="lo4"></div>
             </div>
             
-            <div id="navAnim">
-                <div id="beforeNavAnimMove"> 
-                    <div id="underBNav"></div> 
-                </div>
-                <div id="navAnimMove"></div>
-                <div id="afterNavAnimMove">
-                    <div id="underANav"></div>
-                </div>
-            </div>
-    
-            <div class="logo" id="lo1"></div>
-            <div class="logo" id="lo2"></div>
-            <div class="logo" id="lo3"></div>
-            <div class="logo" id="lo4"></div>
+            <span>
+                    <div id="main-border">
+                        <div id="main-under-border"></div>
+                    </div>
+            </span>
+            <!--ici le contenue-->
+                    <h2 class="content">Bienvenue sur ce Portefolio</h2>
+                    <p class="content">ceci est un texte pour tester le responsive de mon main alors j'écris des choses petit a petit pour voir comment ca peut rendre sur le site</p>
+                    <p class="content">ceci est un texte pour tester le responsive de mon main alors j'écris des choses petit a petit pour voir comment ca peut rendre sur le site</p>
+                    <p class="content">ceci est un texte pour tester le responsive de mon main alors j'écris des choses petit a petit pour voir comment ca peut rendre sur le site</p>
+                    <p class="content">ceci est un texte pour tester le responsive de mon main alors j'écris des choses petit a petit pour voir comment ca peut rendre sur le site</p>
+                    <p class="content">ceci est un texte pour tester le responsive de mon main alors j'écris des choses petit a petit pour voir comment ca peut rendre sur le site</p>
+            <!--ici le contenue-->    
+    </main>
+    <span id="border">
+        <div id="main-border-two">
+            <div id="main-under-border"></div>
         </div>
-        
-        <span>
-                <div id="main-border">
-                    <div id="main-under-border"></div>
-                </div>
-        </span>
-        
-</main>
-<span id="border">
-    <div id="main-border-two">
-        <div id="main-under-border"></div>
-    </div>
-</span>   
+    </span>   
   
 </body>
 </html>

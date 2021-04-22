@@ -1,7 +1,7 @@
 html { 
     margin: -10px; 
     height: 100%;
-    overflow-x: hidden; 
+    overflow: hidden; 
 }
 #body{
     background: rgb(40,61,59);
@@ -17,8 +17,9 @@ html {
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~HEADER~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 #header-container{
-    width: 70%;
-    min-width: 450px;
+    width: 90%;
+    max-width: 1000px;
+    min-width: 425px;
     justify-self: center;
 }
 header{
@@ -38,6 +39,8 @@ h1 :nth-child(1){
 #link {
     display: flex; justify-content: flex-end;
     align-items: center;
+    position: relative;
+    left: 30px;
     width: 100%;
     margin-bottom: 10px;
     padding: 0px;
@@ -52,7 +55,8 @@ h1 :nth-child(1){
 }
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~MAIN~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 main{
-    width: 70%;
+    width: 90%;
+    max-width: 1000px;
     height: 100%;
     min-width: 450px;
     padding-right: 20px;
@@ -60,7 +64,12 @@ main{
     border-radius: 0px 20px 0px 0px;
     color: black;
 }
-/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~SECTION~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~CONTENT~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.content{
+    position: relative;
+    z-index: 0;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~BORDER~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 #main-border{
     height: 20px;
     width: 210px;
@@ -81,17 +90,18 @@ main{
 }
 #border{
     position: absolute;
-    left: -165px;
+    opacity: 0;
     top: 283px;
 }
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~NAV~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 #nav-container{
     float: left;
+    position: relative;
+    z-index: 2;
     width: 205px;
     min-width: 205px;
-    height: 230px;
+    height: 100%;
     margin: 0px 20px 10px -20px;
-    border-radius: 0px 0px 20px 0px;
     background: rgb(40,61,59);
     color: white;
 }
@@ -147,6 +157,7 @@ main{
 #afterNavAnimMove {
     width: 99%; height: 10px;
     background: rgba(255, 255, 255, 0.322);
+
 }
 #underANav {
     width: 100%; height: 100%; left: 110px; 
@@ -186,162 +197,3 @@ main{
     background-position: center;
 }
 
-/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ANIMATION~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-/*~~~~~~~~~~TITLE~~~~~~~~~~*/
-#titleH1 :nth-child(1){
-    opacity: 0;
-    position: relative;
-    left: -200px;
-    animation: 0.5s ease forwards name-anim;
-}
-@keyframes name-anim{
-    0%{
-        opacity: 0;
-        left: -150px;
-    }
-    100%{
-        opacity: 1;
-        left: 0px;
-    }
-}
-#twoPoints{
-    opacity: 0;
-    position: relative;
-    left: -30px;
-    animation: 0.4s ease forwards points-anim;
-    animation-delay: 0.5s;
-}
-@keyframes points-anim{
-    0%{
-        opacity: 0;
-        left: -30px;
-    }
-    100%{
-        opacity: 1;
-        left: 0px;
-    }
-}
-#titleEnd{
-    opacity: 0;
-    position: relative;
-    left: -150px;
-    animation: 0.4s ease forwards title-end-anim;
-    animation-delay: 0.9s;
-}
-@keyframes title-end-anim{
-    0%{
-        opacity: 0;
-        left: -150px;
-    }
-    100%{
-        opacity: 1;
-        left: 0px;
-    }
-}
-/*~~~~~~~~~~LINK~~~~~~~~~~*/
-#linkedin{    
-    opacity: 0;
-    position: relative;
-    top: 40px;
-    animation: 0.15s ease forwards linkedin-anim;
-    animation-delay: 1.3s;
-}
-@keyframes linkedin-anim{
-    0%{
-        opacity: 0;
-        top: 40px;
-    }
-    100%{
-        opacity: 1;
-        top: 0px;
-    }
-}
-#github{
-    opacity: 0;
-    position: relative;
-    top: 40px;
-    animation: 0.15s ease forwards github-anim;
-    animation-delay: 1.45s;
-}
-@keyframes github-anim{
-    0%{
-        opacity: 0;
-        top: 40px;
-    }
-    100%{
-        opacity: 1;
-        top: 0px;
-    }
-}
-#mail{
-    opacity: 0;
-    position: relative;
-    top: 40px;
-    animation: 0.15s ease forwards mail-anim;
-    animation-delay: 1.60s;
-}
-@keyframes mail-anim{
-    0%{
-        opacity: 0;
-        top: 40px;
-    }
-    100%{
-        opacity: 1;
-        top: 0px;
-    }
-}
-/*~~~~~~~~~~NAV~~~~~~~~~~*/
-#nav-container{
-    transform: scale(0,0);
-    position: relative;
-    left: -200px;
-    animation: 1s  ease forwards nav-anim;
-    animation-delay: 1.80s;
-}
-@keyframes nav-anim{
-    0%{
-        transform: scale(0,0);
-        left: -200px;
-    }
-    100%{
-        transform: scale(1,1);
-        left: 0px;
-    }
-}
-
-main{
-    animation:2s ease forwards main-anim;
-    animation-delay: 2.80s;
-}
-@keyframes main-anim {
-    0%{
-        background-color: rgba(255, 255, 255, 0);
-    }
-    100%{
-        background: rgba(255, 255, 255, 0.835);
-    }
-}
-main{
-    animation:2s ease forwards main-anim;
-    animation-delay: 2.80s;
-}
-@keyframes main-anim {
-    0%{
-        background-color: rgba(255, 255, 255, 0);
-    }
-    100%{
-        background: rgba(255, 255, 255, 0.835);
-    }
-}
-#main-under-border{
-    animation:2s ease forwards main-under-border-anim;
-    animation-delay: 2.80s;
-}
-@keyframes main-under-border-anim {
-    0%{
-        background-color: rgba(255, 255, 255, 0);
-    }
-    100%{
-        background: rgba(255, 255, 255, 0.835);
-    }
-}

@@ -1,0 +1,38 @@
+@media(max-width : 800px){
+        #nav-container{
+        height: 230px;
+        border-radius: 0px 0px 20px 0px;
+        }
+        #border{
+        position: absolute;
+        opacity: 1;
+        top: 283px;
+        left: -165px;
+         }
+    
+}
+@media(max-width : 510px){
+    #header-container{
+        margin-left: 15px;
+    }
+
+    main{
+        
+        border-radius: 0px;
+        padding-right: 10px;
+        padding-left: 25px;
+        min-width: 480px;
+    }
+    #body{
+        margin-left: 0px;
+    }
+    #border{
+        opacity: 0;
+    }
+    #nav{
+        border-top-left-radius: 0px !important;
+        border-bottom-left-radius: 0px !important;
+        font-size: 22px;
+    }
+         
+}

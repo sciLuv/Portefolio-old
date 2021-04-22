@@ -1,0 +1,164 @@
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ANIMATION~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/*~~~~~~~~~~TITLE~~~~~~~~~~*/
+#titleH1 :nth-child(1){
+    opacity: 0;
+    position: relative;
+    left: -200px;
+    animation: 0.5s ease forwards name-anim;
+}
+@keyframes name-anim{
+    0%{
+        opacity: 0;
+        left: -150px;
+    }
+    100%{
+        opacity: 1;
+        left: 0px;
+    }
+}
+#twoPoints{
+    opacity: 0;
+    position: relative;
+    left: -30px;
+    animation: 0.4s ease forwards points-anim;
+    animation-delay: 0.5s;
+}
+@keyframes points-anim{
+    0%{
+        opacity: 0;
+        left: -30px;
+    }
+    100%{
+        opacity: 1;
+        left: 0px;
+    }
+}
+#titleEnd{
+    opacity: 0;
+    position: relative;
+    left: -150px;
+    animation: 0.4s ease forwards title-end-anim;
+    animation-delay: 0.9s;
+}
+@keyframes title-end-anim{
+    0%{
+        opacity: 0;
+        left: -150px;
+    }
+    100%{
+        opacity: 1;
+        left: 0px;
+    }
+}
+/*~~~~~~~~~~NAV~~~~~~~~~~*/
+#nav-container{
+    position: relative;
+    left: -212px;
+    opacity: 0;
+    animation: 0.8s  ease forwards nav-anim;
+    animation-delay: 1.2s;
+}
+@keyframes nav-anim{
+    0%{
+        left: -212px;
+        opacity: 0;
+    }
+    100%{
+        left: 0px;
+        opacity: 1;
+    }
+}
+/*~~~~~~~~~~MAIN~~~~~~~~~~*/
+main{
+    animation:1.7s ease forwards main-anim;
+    animation-delay: 1.9s;
+}
+@keyframes main-anim {
+    0%{
+        background-color: rgba(255, 255, 255, 0);
+    }
+    100%{
+        background: rgba(255, 255, 255, 0.835);
+    }
+}
+#main-under-border{
+    animation:1.7s ease forwards main-under-border-anim;
+    animation-delay: 1.9s;
+}
+@keyframes main-under-border-anim {
+    0%{
+        background-color: rgba(255, 255, 255, 0);
+    }
+    100%{
+        background: rgba(255, 255, 255, 0.835);
+    }
+}
+/*~~~~~~~~~~CONTENT~~~~~~~~~~*/
+.content{
+    opacity: 0;
+    margin-top: 100px;
+    animation: 1.7s ease forwards content-anim;
+    animation-delay: 1.5s;
+}
+@keyframes content-anim {
+    0%{
+    opacity: 0;
+    margin-top: 100px;
+    }
+    100%{
+    opacity: 1;
+    margin-top: 0px;
+    }
+}
+/*~~~~~~~~~~LINK~~~~~~~~~~*/
+#linkedin{    
+    opacity: 0;
+    position: relative;
+    top: 40px;
+    animation: 0.15s ease forwards linkedin-anim;
+    animation-delay: 2.8s;
+}
+@keyframes linkedin-anim{
+    0%{
+        opacity: 0;
+        top: 40px;
+    }
+    100%{
+        opacity: 1;
+        top: 0px;
+    }
+}
+#github{
+    opacity: 0;
+    position: relative;
+    top: 40px;
+    animation: 0.15s ease forwards github-anim;
+    animation-delay: 2.9s;
+}
+@keyframes github-anim{
+    0%{
+        opacity: 0;
+        top: 40px;
+    }
+    100%{
+        opacity: 1;
+        top: 0px;
+    }
+}
+#mail{
+    opacity: 0;
+    position: relative;
+    top: 40px;
+    animation: 0.15s ease forwards mail-anim;
+    animation-delay: 3s;
+}
+@keyframes mail-anim{
+    0%{
+        opacity: 0;
+        top: 40px;
+    }
+    100%{
+        opacity: 1;
+        top: 0px;
+    }
+}
